@@ -7,80 +7,64 @@ set -eu
 
 # Apps
 apps=(
-  shimo
-  1password
   alfred
   dropbox
   google-chrome
-  qlcolorcode
   screenflick
   slack
   transmit
-  appcleaner
   firefox
   hazel
-  qlmarkdown
-  seil
   spotify
   vagrant
-  arq
   flash
   iterm2
-  qlprettypatch
-  shiori
   sublime-text3
   virtualbox
   atom
   flux
-  mailbox
-  qlstephen
   sketch
   tower
   vlc
-  cloudup
-  nvalt
   quicklook-json
   skype
-  transmission
-  apikitchen
-  mamp
+  webstorm
+  google-drive
 )
 
 # fonts
 fonts=(
-  font-m-plus
-  font-clear-sans
   font-roboto
 )
 
 # Atom packages
-atom=(
-  advanced-railscasts-syntax
-  atom-beautify
-  cmd-9
-  color-picker
-  css-comb
-  docblockr
-  easy-motion
-  editor-stats
-  emmet
-  fancy-new-file
-  file-icons
-  git-history
-  highlight-selected
-  image-view
-  inc-dec-value
-  key-peek
-  language-jade
-  linter
-  markdown-preview
-  merge-conflicts
-  neutron-ui
-  npm-install
-  react
-  vim-mode
-  zentabs
-)
+# atom=(
+#   advanced-railscasts-syntax
+#   atom-beautify
+#   cmd-9
+#   color-picker
+#   css-comb
+#   docblockr
+#   easy-motion
+#   editor-stats
+#   emmet
+#   fancy-new-file
+#   file-icons
+#   git-history
+#   highlight-selected
+#   image-view
+#   inc-dec-value
+#   key-peek
+#   language-jade
+#   linter
+#   markdown-preview
+#   merge-conflicts
+#   neutron-ui
+#   npm-install
+#   react
+#   vim-mode
+#   zentabs
+# )
 
 # Specify the location of the apps
 appdir="/Applications"

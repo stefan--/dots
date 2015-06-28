@@ -20,19 +20,19 @@ echo "This script will make your Mac awesome"
 # General UI/UX
 ###############################################################################
 
-echo ""
-echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-  defaults write "${domain}" dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-    "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-    "/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-  "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-  "/System/Library/CoreServices/Menu Extras/Battery.menu" \
-  "/System/Library/CoreServices/Menu Extras/Clock.menu"
+# echo ""
+# echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
+# for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+#   defaults write "${domain}" dontAutoLoad -array \
+#     "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+#     "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+#     "/System/Library/CoreServices/Menu Extras/User.menu"
+# done
+# defaults write com.apple.systemuiserver menuExtras -array \
+#   "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+#   "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+#   "/System/Library/CoreServices/Menu Extras/Battery.menu" \
+#   "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 echo ""
 echo "Disabling OS X Gate Keeper"
@@ -76,9 +76,9 @@ echo ""
 echo "Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-echo ""
-echo "Never go into computer sleep mode"
-systemsetup -setcomputersleep Off > /dev/null
+# echo ""
+# echo "Never go into computer sleep mode"
+# systemsetup -setcomputersleep Off > /dev/null
 
 echo ""
 echo "Check for software updates daily, not just once per week"
@@ -168,9 +168,9 @@ echo ""
 echo "Disabling the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-echo ""
-echo "Use column view in all Finder windows by default"
-defaults write com.apple.finder FXPreferredViewStyle Clmv
+# echo ""
+# echo "Use column view in all Finder windows by default"
+# defaults write com.apple.finder FXPreferredViewStyle Clmv
 
 echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
@@ -182,11 +182,11 @@ defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
-echo ""
-echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# echo ""
+# echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
+# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 
 ###############################################################################
@@ -392,10 +392,10 @@ echo "Speeding up wake from sleep to 24 hours from an hour"
 # http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
 sudo pmset -a standbydelay 86400
 
-echo ""
-echo "Disable computer sleep and stop the display from shutting off"
-sudo pmset -a sleep 0
-sudo pmset -a displaysleep 0
+# echo ""
+# echo "Disable computer sleep and stop the display from shutting off"
+# sudo pmset -a sleep 0
+# sudo pmset -a displaysleep 0
 
 echo ""
 echo "Disable annoying backswipe in Chrome"
