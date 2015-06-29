@@ -15,8 +15,11 @@ fi
 osx="$os/osx"
 
 # Run each program
+echo "___defaults"
 sh "$osx/defaults.sh"
+echo "___binaries"
 sh "$osx/binaries.sh"
+echo "___apps"
 sh "$osx/apps.sh"
 
 # Symlink the profile

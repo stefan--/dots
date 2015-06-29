@@ -29,6 +29,7 @@ apps=(
   quicklook-json
   skype
   webstorm
+  android-studio
   google-drive
 )
 
@@ -82,8 +83,8 @@ main() {
 
   # Install homebrew-cask
   echo "installing cask..."
-  brew tap phinze/homebrew-cask
-  brew install brew-cask
+  #brew tap caskroom/cask/brew-cask
+  brew install caskroom/cask/brew-cask
 
   # Tap alternative versions
   brew tap caskroom/versions
@@ -101,7 +102,7 @@ main() {
 
   # install atom plugins
   echo "installing atom plugins..."
-  apm install ${atom[@]}
+  # apm install ${atom[@]}
 
   # link with alfred
   alfred

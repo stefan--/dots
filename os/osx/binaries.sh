@@ -4,6 +4,8 @@ set -eu
 #
 # Binary installer
 #
+ echo "### Binary installer ###"
+
 
 # Check for Homebrew
 if test ! $(which brew); then
@@ -12,7 +14,7 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew
-brew update && brew upgrade brew-cask
+brew update ## && brew upgrade caskroom/cask/brew-cask
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -37,7 +39,6 @@ binaries=(
   ffmpeg
   python
   mongo
-  sshfs
   node
   tree
   hub
