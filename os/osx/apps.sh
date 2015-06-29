@@ -32,6 +32,7 @@ apps=(
   android-studio
   mysqlworkbench
   google-drive
+  gpgtools
 )
 
 # fonts
