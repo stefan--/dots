@@ -30,6 +30,7 @@ apps=(
   skype
   webstorm
   android-studio
+  mysqlworkbench
   google-drive
 )
 
