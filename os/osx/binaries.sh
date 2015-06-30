@@ -47,6 +47,7 @@ binaries=(
   tmux
   zsh
   awscli
+  awsebcli
 )
 
 # Install the binaries
